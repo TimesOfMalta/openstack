@@ -165,7 +165,8 @@ EOT
         return [
             'location'   => self::HEADER,
             'type'       => self::OBJECT_TYPE,
-            'prefix'     => sprintf('X-%s-Meta-', ucfirst($type)),
+            //'prefix'     => sprintf('X-%s-Meta-', ucfirst($type)),
+            'prefix'     => '',
             'properties' => [
                 'type' => self::STRING_TYPE,
             ],
