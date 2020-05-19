@@ -22,7 +22,9 @@ class Container extends OperatorResource implements Creatable, Deletable, Retrie
 {
     use MetadataTrait;
 
-    const METADATA_PREFIX = 'X-Container-Meta-';
+    // NOTE: Rackspace does not provide such header key prefix.
+    //const METADATA_PREFIX = 'X-Container-Meta-';
+    const METADATA_PREFIX = 'X-';
 
     /** @var int */
     public $objectCount;
